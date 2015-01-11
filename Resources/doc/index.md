@@ -1,19 +1,12 @@
-Country Bundle
-==============
+# Getting Started
 
-The bundle with abstract Country entity based on Country's data of Symfony
-(Intl Component)[http://symfony.com/doc/current/components/intl.html]
-used for fixtures that load to database for easy entity relating and less DB redundant data.
-
-Install
--------
+## Install
 
 Install bundle with `Composer` dependency manager first by running the command:
 
 `$ composer require "lapalabs/country-bundle:dev-master"`
 
-Include
--------
+## Include
 
 Enable the bundle in application kernel for `prod` environment:
 
@@ -30,8 +23,7 @@ public function registerBundles()
 }
 ```
 
-Create your Country class
--------------------------
+## Create your Country class
 
 ``` php
 <?php
@@ -60,8 +52,7 @@ class Country extends BaseCountry
 }
 ```
 
-Create your Country fixtures loader
-------------------------------------
+## Create your Country fixtures loader
 
 ``` php
 <?php
@@ -89,20 +80,18 @@ class LoadCountryData extends AbstractLoadCountryData implements FixtureInterfac
 }
 ```
 
-Update database schema
-----------------------
+## Update database schema
 
 ``` bash
 $ php app/console doctrine:schema:update --force
 ```
 
-Load fixtures
--------------
+## Load fixtures
 
 ``` bash
 $ php app/console doctrine:fixtures:load
 ```
 
-Congratulations!
-----------------
+## Congratulations!
+
 You're ready to use it!
