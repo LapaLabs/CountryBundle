@@ -55,6 +55,7 @@ class AbstractLoadCountryData implements ContainerAwareInterface
             $country = $this->createEntityClass();
             $country->setName($name);
             $country->setCode($code);
+            $country->setPublished(true);
             $manager->persist($country);
         }
 
