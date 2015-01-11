@@ -1,0 +1,20 @@
+{
+    "name": "lapalabs/country-bundle",
+    "description": "The bundle with abstract Country entity based on Country's data of Symfony Intl Component",
+    "keywords": ["lapalabs", "country", "location", "address", "list", "bundle"],
+    "homepage": "https://github.com/LapaLabs/CountryBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LapaLabs",
+            "email": "mail@brainforce.kiev.ua"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "~2.0",
+        "twig/twig": "~1"
+    },
+    "autoload": {
+        "psr-4": {"LapaLabs\\CountryBundle\\": ""}
+    }
+}
